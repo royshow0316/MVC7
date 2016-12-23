@@ -57,7 +57,7 @@ namespace MVC.App_Start
             container.RegisterType<IDbContextFactory, DbContextFactory>(new PerRequestLifetimeManager());
             #endregion
 
-            #region
+            #region UnitOfWork
             container.RegisterType<IUnitOfWork, UnitOfWork>();
             #endregion
 
